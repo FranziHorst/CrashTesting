@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>N. Sane Transformation — Disruption & Change Management</title>
+<meta name="description" content="N. Sane Transformation zerlegt verkrustete Unternehmensstrukturen und setzt sie schneller wieder zusammen. Disruptions- und Change-Beratung für Führungsteams, die keine Lust mehr auf Moderationskarten haben.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="N. Sane Transformation">
+<meta property="og:description" content="Wir nehmen Ihre Organisation auseinander, bevor der Markt es tut.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/crash-hero-760.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 24V8h4.6l5.2 9.1V8H23v16h-4.5l-5.3-9.2V24z' fill='%23ff4b12'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/anton-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/space-grotesk-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <div class="preloader__mark">
+      <span class="preloader__word" data-split>N. SANE</span>
+      <span class="preloader__sub">TRANSFORMATION</span>
+    </div>
+    <div class="preloader__meter">
+      <div class="preloader__bar" id="preloadBar"></div>
+    </div>
+    <div class="preloader__count"><span id="preloadNum">000</span><i>%</i></div>
+  </div>
+  <div class="preloader__curtain"></div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor__dot" id="cursorDot"></div>
+  <div class="cursor__ring" id="cursorRing"><span class="cursor__label" id="cursorLabel"></span></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><i id="scrollBar"></i></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" data-cursor="spin" aria-label="N. Sane Transformation — Startseite">
+    <span class="nav__logo-mark" id="logoMark">N.</span>
+    <span class="nav__logo-text">SANE<em>TRANSFORMATION</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Hauptnavigation">
+    <a href="#manifest" data-scramble>Haltung</a>
+    <a href="#leistungen" data-scramble>Leistungen</a>
+    <a href="#prozess" data-scramble>Methode</a>
+    <a href="#cases" data-scramble>Cases</a>
+    <a href="#faq" data-scramble>FAQ</a>
+  </nav>
+  <a class="btn btn--sm magnetic" href="#kontakt" data-cursor="boom">
+    <span class="btn__text">Kollision buchen</span>
+    <span class="btn__icon" aria-hidden="true">↯</span>
+  </a>
+  <button class="nav__burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
+    <i></i><i></i>
+  </button>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Mobile Navigation">
+    <a href="#manifest"><span>01</span> Haltung</a>
+    <a href="#leistungen"><span>02</span> Leistungen</a>
+    <a href="#prozess"><span>03</span> Methode</a>
+    <a href="#cases"><span>04</span> Cases</a>
+    <a href="#faq"><span>05</span> FAQ</a>
+    <a href="#kontakt"><span>06</span> Kontakt</a>
+  </nav>
+  <p class="menu__foot">Hamburg · Zürich · da, wo es kracht</p>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-bg="dark">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="eyebrow reveal" data-delay="0">
+      <i class="dot"></i> Disruptions- &amp; Change-Beratung
+    </p>
+
+    <h1 class="hero__title" id="heroTitle">
+      <span class="line"><span class="word" data-split data-fit>N. SANE</span></span>
+      <span class="line"><span class="word word--out" data-split data-fit>TRANSFORMATION</span></span>
+    </h1>
+
+    <figure class="hero__figure" id="heroFigure">
+      <div class="hero__ring" aria-hidden="true"></div>
+      <img id="heroImg"
+           src="assets/img/crash-hero-760.webp"
+           srcset="assets/img/crash-hero-480.webp 480w, assets/img/crash-hero-760.webp 760w, assets/img/crash-hero-1100.webp 1100w"
+           sizes="(max-width: 700px) 78vw, 46vw"
+           width="1533" height="1846" decoding="async" fetchpriority="high"
+           alt="Gründer und Chief Disruption Officer von N. Sane Transformation, skeptisch blickend">
+      <figcaption class="hero__caption">
+        <b>Crash Bandicoot</b><span>Founder &amp; Chief Disruption Officer</span>
+      </figcaption>
+      <span class="hero__badge" aria-hidden="true">Est.<br><b>1996</b></span>
+    </figure>
+
+    <div class="hero__bottom">
+    <a class="hero__scroll" href="#manifest" aria-label="Weiter scrollen">
+      <span>Scrollen</span><i aria-hidden="true"></i>
+    </a>
+    <div class="hero__aside reveal" data-delay="200">
+      <p class="hero__lede">
+        Wir nehmen Ihre Organisation auseinander, <em>bevor der Markt es tut</em> — und setzen sie so
+        zusammen, dass sie rennt statt ruckelt.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--solid magnetic" href="#kontakt" data-cursor="boom">
+          <span class="btn__text">Kollision buchen</span>
+          <span class="btn__icon" aria-hidden="true">↯</span>
+        </a>
+        <a class="btn btn--ghost magnetic" href="#prozess" data-cursor="scroll">
+          <span class="btn__text">Methode ansehen</span>
+        </a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>4</b> Phasen</li>
+        <li><b>12</b> Wochen</li>
+        <li><b>0</b> Moderationskarten</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track" id="ticker">
+      <span>Silos sprengen<i>✳</i>Prozesse zerlegen<i>✳</i>Kultur entkrusten<i>✳</i>Tempo installieren<i>✳</i></span>
+      <span>Silos sprengen<i>✳</i>Prozesse zerlegen<i>✳</i>Kultur entkrusten<i>✳</i>Tempo installieren<i>✳</i></span>
+      <span>Silos sprengen<i>✳</i>Prozesse zerlegen<i>✳</i>Kultur entkrusten<i>✳</i>Tempo installieren<i>✳</i></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFEST ============ -->
+<section class="manifest" id="manifest" data-bg="light">
+  <div class="wrap">
+    <p class="section-label"><span>01</span> Haltung</p>
+    <div class="manifest__grid">
+    <blockquote class="manifest__text" id="manifestText">
+      Die meisten Change-Programme scheitern nicht am Widerstand. Sie scheitern an Vorsicht:
+      an Lenkungskreisen, die Entscheidungen vertagen, bis der Markt sie übernimmt.
+      <mark>Wir sind das Gegenteil von vorsichtig</mark> — und trotzdem die Erwachsenen im Raum.
+    </blockquote>
+      <aside class="manifest__aside">
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 200 200" class="seal__ring">
+            <defs><path id="sealPath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+            <text><textPath href="#sealPath">N. SANE TRANSFORMATION ✳ DISRUPTION SEIT 1996 ✳ </textPath></text>
+          </svg>
+          <span class="seal__core">↯</span>
+        </div>
+        <p class="manifest__credit">
+          <b>Crash Bandicoot</b>
+          <span>Founder &amp; Chief Disruption Officer. Rennt seit 1996 durch verschlossene Kisten —
+            inzwischen mit Businessplan.</span>
+        </p>
+      </aside>
+    </div>
+    <div class="manifest__foot reveal">
+      <div>
+        <h3>Wir bringen Krach.</h3>
+        <p>Jede Intervention ist laut genug, dass sie im ganzen Haus gehört wird — und präzise genug,
+          dass am Montag danach alles funktioniert.</p>
+      </div>
+      <div>
+        <h3>Und wir räumen auf.</h3>
+        <p>Disruption ohne Statik ist Vandalismus. Wir liefern beides: den Aufprall und den Bauplan
+          für das, was danach steht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" data-bg="dark" aria-label="Kennzahlen">
+  <div class="wrap stats__grid">
+    <div class="stat reveal"><b class="counter" data-to="214">0</b><span>zerlegte Silos</span></div>
+    <div class="stat reveal" data-delay="80"><b class="counter" data-to="12">0</b><span>Wochen bis zur ersten Kollision</span></div>
+    <div class="stat reveal" data-delay="160"><b class="counter" data-to="94" data-suffix="%">0</b><span>der Führungsteams bleiben an Bord</span></div>
+    <div class="stat reveal" data-delay="240"><b class="counter" data-to="3.4" data-decimals="1" data-suffix="×">0</b><span>Entscheidungs&shy;geschwindigkeit</span></div>
+  </div>
+</section>
+
+<!-- ============ LEISTUNGEN ============ -->
+<section class="services" id="leistungen" data-bg="dark">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="section-label"><span>02</span> Leistungen</p>
+      <h2 class="h2 reveal">Was wir <em>aufbrechen</em></h2>
+      <p class="section-intro reveal" data-delay="120">Fünf Zugriffe. Einzeln buchbar, zusammen unangenehm wirksam.</p>
+    </header>
+
+    <ul class="svc" id="svcList">
+      <li class="svc__row" data-img="1">
+        <button class="svc__head" aria-expanded="false" data-cursor="open">
+          <span class="svc__num">01</span>
+          <span class="svc__title">Struktur-Demontage</span>
+          <span class="svc__tag">Org-Design</span>
+          <span class="svc__plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc__body"><div class="svc__bodyIn">
+          <p>Wir öffnen jede Kiste im Org-Chart und fragen genau einmal, was sie beiträgt.
+            Was Wert schafft, bleibt. Der Rest ist Splitter — und Splitter kehren wir mit auf.</p>
+          <ul class="chips"><li>Org-Audit</li><li>Rollenschnitt</li><li>Schnittstellen-Kur</li></ul>
+        </div></div>
+      </li>
+      <li class="svc__row" data-img="2">
+        <button class="svc__head" aria-expanded="false" data-cursor="open">
+          <span class="svc__num">02</span>
+          <span class="svc__title">Entscheidungs-Tempo</span>
+          <span class="svc__tag">Governance</span>
+          <span class="svc__plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc__body"><div class="svc__bodyIn">
+          <p>Elf Freigabestufen werden zwei. Niemand verliert dabei die Kontrolle — nur die Illusion
+            davon. Und die war ohnehin teuer.</p>
+          <ul class="chips"><li>Decision Mapping</li><li>Mandatsklärung</li><li>Gremien-Diät</li></ul>
+        </div></div>
+      </li>
+      <li class="svc__row" data-img="3">
+        <button class="svc__head" aria-expanded="false" data-cursor="open">
+          <span class="svc__num">03</span>
+          <span class="svc__title">Kultur-Entkrustung</span>
+          <span class="svc__tag">People</span>
+          <span class="svc__plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc__body"><div class="svc__bodyIn">
+          <p>Wir machen Reibung sichtbar, bevor sie teuer wird: die ungesagten Regeln, die
+            Nebenabsprachen, die Meetings nach dem Meeting.</p>
+          <ul class="chips"><li>Kultur-Diagnostik</li><li>Konflikt-Labor</li><li>Führungs-Feedback</li></ul>
+        </div></div>
+      </li>
+      <li class="svc__row" data-img="4">
+        <button class="svc__head" aria-expanded="false" data-cursor="open">
+          <span class="svc__num">04</span>
+          <span class="svc__title">Führungs-Sprints</span>
+          <span class="svc__tag">Enablement</span>
+          <span class="svc__plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc__body"><div class="svc__bodyIn">
+          <p>Zwölf Wochen, ein Team, ein Ergebnis, das man anfassen kann. Kein Zertifikat, kein
+            Flipchart-Friedhof, keine Reisegruppe ins Offsite.</p>
+          <ul class="chips"><li>Sprint-Setup</li><li>Live-Coaching</li><li>Ergebnis-Review</li></ul>
+        </div></div>
+      </li>
+      <li class="svc__row" data-img="5">
+        <button class="svc__head" aria-expanded="false" data-cursor="open">
+          <span class="svc__num">05</span>
+          <span class="svc__title">Post-Merger-Wucht</span>
+          <span class="svc__tag">Integration</span>
+          <span class="svc__plus" aria-hidden="true"></span>
+        </button>
+        <div class="svc__body"><div class="svc__bodyIn">
+          <p>Zwei Firmen, ein Betriebssystem. Wir entscheiden früh und laut, statt zwei Jahre lang
+            höflich nebeneinander her zu arbeiten.</p>
+          <ul class="chips"><li>Integrations-Fahrplan</li><li>Doppelrollen-Schnitt</li><li>Takt-Angleich</li></ul>
+        </div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROZESS (horizontal) ============ -->
+<section class="process" id="prozess" data-bg="dark">
+  <div class="process__sticky">
+    <div class="process__top wrap">
+      <p class="section-label"><span>03</span> Methode</p>
+      <h2 class="h2">Vier Phasen. <em>Ein Aufprall.</em></h2>
+      <div class="process__progress"><i id="procBar"></i></div>
+    </div>
+    <div class="process__track" id="procTrack">
+      <article class="phase">
+        <span class="phase__num">01</span>
+        <h3 class="phase__title">SPIN</h3>
+        <p class="phase__kicker">Analyse · 2 Wochen</p>
+        <p>Eine volle Drehung um die eigene Achse: Zahlen, Wege, Gerüchte. Am Ende liegt auf dem
+          Tisch, wo Ihre Organisation Energie verliert — inklusive der Stellen, über die intern
+          niemand spricht.</p>
+        <ul><li>Daten- &amp; Prozessdurchleuchtung</li><li>40 Interviews quer durch alle Ebenen</li><li>Reibungs-Landkarte</li></ul>
+      </article>
+      <article class="phase">
+        <span class="phase__num">02</span>
+        <h3 class="phase__title">SMASH</h3>
+        <p class="phase__kicker">Intervention · 3 Wochen</p>
+        <p>Die erste Kiste geht auf. Wir greifen dort zu, wo der Effekt am größten und der Widerstand
+          am lautesten ist — beides gehört zusammen.</p>
+        <ul><li>Entscheidungswege halbieren</li><li>Zwei Gremien abschaffen</li><li>Erste sichtbare Veränderung in Woche 3</li></ul>
+      </article>
+      <article class="phase">
+        <span class="phase__num">03</span>
+        <h3 class="phase__title">JUMP</h3>
+        <p class="phase__kicker">Sprint · 5 Wochen</p>
+        <p>Neue Wege werden im laufenden Betrieb gefahren, nicht im Labor simuliert. Führung übt
+          unter Last — mit uns daneben, nicht davor.</p>
+        <ul><li>Pilotteams live</li><li>Wöchentliches Kurskorrektur-Review</li><li>Führungskräfte übernehmen Schritt für Schritt</li></ul>
+      </article>
+      <article class="phase">
+        <span class="phase__num">04</span>
+        <h3 class="phase__title">LAND</h3>
+        <p class="phase__kicker">Verankerung · 2 Wochen</p>
+        <p>Landung mit Bodenhaftung: Rollen, Kennzahlen und Rituale werden festgeschraubt, damit
+          nichts zurückfedert, sobald wir das Haus verlassen.</p>
+        <ul><li>Zielbild in Rollen übersetzt</li><li>Kennzahlen im Betrieb verankert</li><li>Übergabe ohne Abhängigkeit</li></ul>
+      </article>
+      <article class="phase phase--cta">
+        <h3>Klingt nach Ihrem<br>nächsten Quartal?</h3>
+        <a class="btn btn--solid magnetic" href="#kontakt" data-cursor="boom">
+          <span class="btn__text">Kollision buchen</span><span class="btn__icon" aria-hidden="true">↯</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METER ============ -->
+<section class="meter" id="meter" data-bg="orange">
+  <div class="wrap meter__wrap">
+    <div class="meter__head">
+      <p class="section-label"><span>04</span> Selbsttest</p>
+      <h2 class="h2">Wie viel Aufprall<br>verträgt Ihr Haus?</h2>
+      <p class="section-intro">Ziehen Sie den Regler. Wir richten uns danach — meistens.</p>
+    </div>
+    <div class="meter__control">
+      <output class="meter__read" id="meterRead" for="meterRange">
+        <b id="meterTitle">Strukturschubs</b>
+        <span id="meterDesc">Wir räumen zwei Gremien ab und nennen es einen guten Anfang.</span>
+      </output>
+      <input class="meter__range" id="meterRange" type="range" min="0" max="100" value="38" step="1"
+             aria-label="Disruptionsgrad" aria-describedby="meterDesc">
+      <div class="meter__scale" aria-hidden="true">
+        <span>Sanfte Delle</span><span>Kistenbruch</span><span>N. Sane Modus</span>
+      </div>
+      <div class="meter__viz">
+        <b class="meter__pct" id="meterPct">38<i>%</i></b>
+        <div class="meter__bars" id="meterBars" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASES ============ -->
+<section class="cases" id="cases" data-bg="dark">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="section-label"><span>05</span> Cases</p>
+      <h2 class="h2 reveal">Kollisionen mit <em>Nachwirkung</em></h2>
+    </header>
+    <div class="cases__grid">
+      <article class="case tilt reveal" data-cursor="case">
+        <div class="case__top"><span>Maschinenbau · 4.200 Mitarbeitende</span><b>2024</b></div>
+        <h3>Von elf Freigabestufen auf zwei</h3>
+        <p>Ein Traditionshaus, in dem jede Investition über 5.000 € durch vier Gremien musste. Nach
+          zwölf Wochen entschied der Bereich selbst — mit Budgetrahmen statt Bittstellung.</p>
+        <div class="case__kpi"><b>−64 %</b><span>Time-to-Decision</span></div>
+      </article>
+      <article class="case tilt reveal" data-delay="100" data-cursor="case">
+        <div class="case__top"><span>Versicherung · 9.800 Mitarbeitende</span><b>2025</b></div>
+        <h3>Silo-Abriss in 14 Wochen</h3>
+        <p>IT und Fachbereich kommunizierten über Ticketsysteme und Anwälte. Heute sitzen sie in
+          denselben Teams — und liefern vierteljährlich das, wofür sie vorher ein Jahr brauchten.</p>
+        <div class="case__kpi"><b>3,1×</b><span>Release-Frequenz</span></div>
+      </article>
+      <article class="case tilt reveal" data-delay="200" data-cursor="case">
+        <div class="case__top"><span>Handel · Post-Merger</span><b>2025</b></div>
+        <h3>Zwei Kulturen, ein Takt</h3>
+        <p>Zwei Häuser, zwei Wahrheiten, ein gemeinsames Logo. Wir haben die Doppelrollen in sechs
+          Wochen geschnitten — offen, früh und ohne stilles Ausbluten.</p>
+        <div class="case__kpi"><b>91 %</b><span>Retention in Führung</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STIMMEN ============ -->
+<section class="voices" data-bg="light" aria-label="Stimmen von Kundinnen und Kunden">
+  <div class="wrap">
+    <p class="section-label"><span>06</span> Stimmen</p>
+  </div>
+  <div class="voices__marquee" data-marquee>
+    <div class="voices__track">
+      <figure class="voice"><blockquote>„Nach zwei Tagen wollte ich sie rauswerfen. Nach zwölf Wochen wollte ich sie behalten."</blockquote><figcaption>COO, Industriekonzern</figcaption></figure>
+      <figure class="voice"><blockquote>„Die einzige Beratung, die mir gesagt hat, welche Abteilung überflüssig ist — inklusive meiner eigenen Rolle."</blockquote><figcaption>Bereichsleiterin, Versicherung</figcaption></figure>
+      <figure class="voice"><blockquote>„Laut, unbequem, und am Ende lag ein Plan auf dem Tisch, den mein Team selbst verteidigt hat."</blockquote><figcaption>CEO, Handelsgruppe</figcaption></figure>
+      <figure class="voice"><blockquote>„Wir hatten 40 Initiativen. Danach hatten wir vier — und zum ersten Mal seit Jahren Tempo."</blockquote><figcaption>CFO, Logistik</figcaption></figure>
+    </div>
+  </div>
+  <p class="voices__note wrap">* Namen geändert. Kisten nicht.</p>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq" data-bg="dark">
+  <div class="wrap faq__wrap">
+    <header>
+      <p class="section-label"><span>07</span> FAQ</p>
+      <h2 class="h2 reveal">Bevor Sie fragen</h2>
+      <p class="section-intro reveal">Die fünf Einwände, die in jedem Erstgespräch kommen.</p>
+    </header>
+    <div class="acc" id="acc">
+      <div class="acc__item">
+        <button class="acc__head" aria-expanded="false"><span>Ist das nicht einfach aggressives Change Management?</span><i aria-hidden="true"></i></button>
+        <div class="acc__body"><p>Aggressiv wäre ohne Plan. Wir sind schnell und unbequem, aber jede
+          Intervention hat ein Ziel, ein Budget und einen Rückweg. Krach ist bei uns Methode, keine
+          Attitüde.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__head" aria-expanded="false"><span>Was, wenn mein Team nicht mitzieht?</span><i aria-hidden="true"></i></button>
+        <div class="acc__body"><p>Dann arbeiten wir genau dort. Widerstand ist Information: Er zeigt,
+          wo Rollen unklar sind oder jemand etwas zu verlieren hat. Wir legen das offen, statt es zu
+          umgehen — meistens zieht danach mehr als die Hälfte freiwillig mit.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__head" aria-expanded="false"><span>Wie schnell sehen wir Ergebnisse?</span><i aria-hidden="true"></i></button>
+        <div class="acc__body"><p>Die erste sichtbare Veränderung liegt in Woche drei, messbare
+          Effekte auf Durchlaufzeiten nach acht bis zwölf Wochen. Was länger braucht, sagen wir vorher
+          — und nicht in der Abschlusspräsentation.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__head" aria-expanded="false"><span>Arbeiten Sie auch mit über 10.000 Mitarbeitenden?</span><i aria-hidden="true"></i></button>
+        <div class="acc__body"><p>Ja, dann aber nie mit dem ganzen Haus gleichzeitig. Wir suchen den
+          Bereich mit der größten Reibung, machen ihn zum Beweisstück und skalieren von dort — mit
+          Ihren Leuten, nicht mit einer Armee von Beratenden.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__head" aria-expanded="false"><span>Warum ein Bandicoot?</span><i aria-hidden="true"></i></button>
+        <div class="acc__body"><p>Weil er seit 1996 ohne Strategiepapier durch verschlossene Kisten
+          rennt und trotzdem jedes Level beendet. Außerdem stellt die Frage niemand mehr, sobald die
+          erste Freigabeschleife gefallen ist.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="cta" id="kontakt" data-bg="dark">
+  <div class="wrap">
+    <p class="section-label"><span>08</span> Kontakt</p>
+    <h2 class="cta__title" id="ctaTitle"><span class="word" data-split data-fit-single>BEREIT?</span></h2>
+    <div class="cta__grid">
+      <p class="cta__lede reveal">Ein Gespräch, 45 Minuten, kostenlos. Danach wissen Sie, ob wir zu
+        Ihnen passen — oder ob Sie gerade nur ein neues Tool brauchen.</p>
+      <aside class="cta__card reveal" data-delay="120">
+        <p class="cta__card-label">Direkt</p>
+        <a href="mailto:kollision@n-sane.example" data-scramble>kollision@n-sane.example</a>
+        <a href="tel:+494012345678">+49 40 123 456 78</a>
+        <p class="cta__card-note"><i class="dot"></i> Antwort in unter 24 Stunden. Meistens deutlich früher.</p>
+      </aside>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <div class="field">
+        <input id="f-name" name="name" type="text" required autocomplete="name" placeholder=" ">
+        <label for="f-name">Name</label>
+      </div>
+      <div class="field">
+        <input id="f-co" name="firma" type="text" required autocomplete="organization" placeholder=" ">
+        <label for="f-co">Unternehmen</label>
+      </div>
+      <div class="field">
+        <input id="f-mail" name="email" type="email" required autocomplete="email" placeholder=" ">
+        <label for="f-mail">E-Mail</label>
+      </div>
+      <div class="field field--select">
+        <select id="f-lvl" name="dringlichkeit">
+          <option value="delle">Es ruckelt nur leicht</option>
+          <option value="bruch" selected>Wir stecken fest</option>
+          <option value="sane">Es brennt, und alle sitzen im Lenkungskreis</option>
+        </select>
+        <label for="f-lvl">Wie festgefahren?</label>
+      </div>
+      <button class="btn btn--solid btn--lg magnetic" type="submit" data-cursor="boom">
+        <span class="btn__text">Kollision anfragen</span><span class="btn__icon" aria-hidden="true">↯</span>
+      </button>
+      <p class="form__note" id="formNote" role="status">Demo-Formular — es wird nichts gesendet.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-bg="dark">
+  <div class="wrap">
+    <div class="footer__cols">
+      <div>
+        <p class="footer__label">Büro</p>
+        <p>Speicherstadt 4<br>20457 Hamburg</p>
+      </div>
+      <div>
+        <p class="footer__label">Kontakt</p>
+        <p><a href="mailto:kollision@n-sane.example" data-scramble>kollision@n-sane.example</a><br>
+           <a href="tel:+494012345678">+49 40 123 456 78</a></p>
+      </div>
+      <div>
+        <p class="footer__label">Social</p>
+        <p><a href="#top" data-scramble>LinkedIn</a><br><a href="#top" data-scramble>Newsletter</a></p>
+      </div>
+      <div>
+        <p class="footer__label">Rechtliches</p>
+        <p><a href="#top">Impressum</a><br><a href="#top">Datenschutz</a></p>
+      </div>
+    </div>
+    <div class="footer__mark" aria-hidden="true">N.SANE</div>
+    <div class="footer__base">
+      <p>© 2026 N. Sane Transformation GmbH — fiktive Beratung, echte Meinungen.</p>
+      <p>Parodie-Projekt. Crash Bandicoot ist eine Marke von Activision Publishing, Inc.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
