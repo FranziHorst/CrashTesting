@@ -209,15 +209,6 @@
   }, { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
   $$('.reveal').forEach((el) => revealIO.observe(el));
 
-  /* ---------- section background themes ---------- */
-  const themeIO = new IntersectionObserver((entries) => {
-    entries.forEach((en) => {
-      if (en.isIntersecting) body.dataset.bg = en.target.dataset.bg;
-    });
-  }, { rootMargin: '-45% 0px -45% 0px' });
-  $$('[data-bg]').forEach((el) => themeIO.observe(el));
-  body.dataset.bg = 'dark';
-
   /* ---------- counters ---------- */
   const countIO = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
@@ -412,6 +403,13 @@
   if (voicesTrack) {
     [...voicesTrack.children].forEach((c) => voicesTrack.appendChild(c.cloneNode(true)));
     addMarquee(voicesTrack, -45);
+    // quotes are meant to be read: hold the marquee while the pointer is on it
+    const shell = voicesTrack.parentElement;
+    const hold = (state) => { const m = marquees.find((x) => x.el === voicesTrack); if (m) m.paused = state; };
+    shell.addEventListener('mouseenter', () => hold(true));
+    shell.addEventListener('mouseleave', () => hold(false));
+    shell.addEventListener('focusin', () => hold(true));
+    shell.addEventListener('focusout', () => hold(false));
   }
 
   const measureMarquees = () => marquees.forEach((m) => {
@@ -510,7 +508,7 @@
     // marquees — base speed plus scroll velocity
     const boost = clamp(Math.abs(scrollVel) / 18, 0, 3.4);
     marquees.forEach((m) => {
-      if (!m.span) return;
+      if (!m.span || m.paused) return;
       m.x += m.speed * (1 + boost) * dt;
       if (m.x <= -m.span) m.x += m.span;
       if (m.x > 0) m.x -= m.span;

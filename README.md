@@ -28,17 +28,19 @@ assets/img/*.webp       Heldenbild in vier Größen (responsive srcset)
 
 ## Design
 
-| Rolle        | Wert                                      |
-|--------------|-------------------------------------------|
-| Schwarz      | `#0a0a0a` (Basis)                         |
-| Weiß / Paper | `#ffffff`, `#f2efe9` (helle Sektionen)    |
-| Orange       | `#ff4b12` (Akzent, sparsam und laut)      |
-| Display      | Anton — Plakatschrift, randlos gesetzt    |
-| UI           | Space Grotesk                             |
-| Mono         | Space Mono — Labels, Zähler, Kleinkram    |
+| Rolle   | Wert                                            |
+|---------|-------------------------------------------------|
+| Schwarz | `#0a0a0a` (durchgehende Basis)                  |
+| Weiß    | `#ffffff` (Text), Hairlines mit 14 % Deckung    |
+| Orange  | `#ff4b12` (Akzent, punktuell und laut)          |
+| Display | Anton — Plakatschrift, randlos gesetzt          |
+| UI      | Space Grotesk                                   |
+| Mono    | Space Mono — Labels, Zähler, Kleinkram          |
 
-Der Seitenhintergrund wechselt beim Scrollen zwischen Schwarz, Papierweiß und Vollflächen-Orange
-(`data-bg` auf den Sektionen, gesteuert per IntersectionObserver).
+Der Hintergrund bleibt über die gesamte Seite schwarz — kein Farbwechsel beim Scrollen. Den Rhythmus
+tragen stattdessen Typo-Größen, Haarlinien an jeder Sektionsmarke und punktuelle Orange-Flächen:
+die Leistungs-Zeilen beim Hover, die Crash-o-Meter-Karte, die CTA-Karte am Ende der Methode und die
+Stimmen-Karten beim Hover.
 
 ## Features & Micro-Interactions
 
@@ -50,9 +52,10 @@ Der Seitenhintergrund wechselt beim Scrollen zwischen Schwarz, Papierweiß und V
 - **Scramble-Text** auf Navigations- und Footer-Links
 - **Parallax-Held**: Maus-Tilt plus Scroll-Versatz, per Lerp geglättet
 - **Ticker-Marquee**, dessen Tempo mit der Scroll-Geschwindigkeit ansteigt
+- **Stimmen-Marquee**, das bei Hover oder Tastaturfokus anhält, damit die Zitate lesbar bleiben
 - **Wortweise Scroll-Reveal** im Manifest-Statement
 - **Horizontale Scroll-Sektion** für die vier Phasen (gepinnt, mit Fortschrittsbalken und aktiver Karte)
-- **Crash-o-Meter**: Slider mit fünf Eskalationsstufen, Equalizer und Shake-Feedback
+- **Crash-o-Meter**: orange Karte mit Slider, fünf Eskalationsstufen, Equalizer und Shake-Feedback
 - **Case-Karten** mit 3D-Tilt und zeigerfolgendem Glow
 - **Akkordeons** für Leistungen (mehrfach offen) und FAQ (exklusiv)
 - Zähler-Animationen, Scroll-Progress, Auto-Hide-Navigation, Grain-Overlay, rotierendes Siegel
